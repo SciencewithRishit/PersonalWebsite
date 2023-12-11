@@ -218,6 +218,8 @@ body {
 
     flex-direction: row; 
 
+    cursor: url('assets/cursors/blackcursor.png'), auto;
+
 }
 
 /* Left Side Column */
@@ -398,34 +400,33 @@ body {
 
 /* All the Logos with the Links in the Panel */
 /* Logos */
+
 /* YT's and Linkedin's Logos */
-#ytlogo, #linkedinlogo {
+#logoyoutube {
 
     height: 40px;
     width: 40px;
 
+    border: 0px solid black;
     background-color: #FEDE5A;
-
-    margin-left: 10px;
 
 }
 
-/* Twitter's Logos */
-#twitterlogo {
+.logo {
 
     height: 40px;
     width: 40px;
 
     background-color: #FEDE5A;
 
+    border: 1px solid black;
     border-radius: 4px;
 
-    margin-left: 10px;
+    cursor: url('assets/cursors/clickcursor.png'), auto;
 
 }
 
-/* Linkedin's Logos */
-#linkedinlogo {
+#logolinkedin {
 
     height: 40px;
     width: 40px;
@@ -435,67 +436,20 @@ body {
     border: 1px solid black;
     border-radius: 6px;
 
-    margin-left: 10px;
-
 }
 
-/* GitHub's Logos */
-#githublogo {
+.links {
 
     height: 40px;
     width: 40px;
 
-    background-color: #FEDE5A;
-
-    border: 1px solid black;
-    border-radius: 4px;
+    cursor: none;
 
     margin-left: 10px;
 
-}
-
-/* Fiverr's Logos */
-#fiverrlogo {
-
-    height: 40px;
-    width: 40px;
-
     background-color: #FEDE5A;
 
-    border: 1px solid black;
-    border-radius: 4px;
-
-    margin-left: 10px;
-
-}
-
-/* GitHub's and Twitter's Links */
-#githublink, #twitterlink, #fiverrlink {
-
-    height: 40px;
-    width: 40px;
-
-    background-color: #FEDE5A;
-
-    border: 0px solid black;
-    border-radius: 0px;
-
-    margin-left: 10px;
-
-}
-
-/* Linkedin's Link */
-#linkedinlink {
-
-    height: 40px;
-    width: 40px;
-
-    background-color: #FEDE5A;
-
-    border: 0px solid black;
-    border-radius: 10px;
-
-    margin-left: 10px;
+    cursor: none;
 
 }
 
