@@ -197,63 +197,54 @@ body,
 
 /* Universal Selector */
 * {
-
     background-color: #212024ff;
     color: white;
 
     box-sizing: border-box;
     font-family: arial, sans-serif;
     margin: 0;
-
 }
 
 /* Body */
 body {
-
     overflow: visible;
     
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
     flex-direction: row; 
 
     cursor: url('assets/cursors/blackcursor.png'), auto;
-
 }
 
-/* Left Side Column */
-.leftsidecolumn {
-
+/***** Inside Body *****/
+/* Part 1 */
+.part1 {
     height: 752px;
     width: 720px; 
-
 }
 
-/* Left Side Image */
-#leftsideimg {
-
+/* My Image */
+#myimg {
     height: 752px;
     width: 720px;
-
 }
 
-/* Right Side Column */
-.rightsidecolumn {
-
+/* Part 2 */
+.part2 {
     height: 752px;
     width: 720px;
 
     flex-direction: column;
     align-items: space-evenly;
     justify-content: center;
-
 }
 
-/* All the Sections in the Right Side Column */
+/***** All the Sections in the Part 2 *****/
 /* First Section */
 #firstsection {
-
     height: auto;
     width: 720px;
 
@@ -262,12 +253,10 @@ body {
     justify-content: center;
 
     margin-top: 10px;
-
 }
 
 /* Second Section */
 #secondsection {
-
     height: auto;
     width: 720px;
 
@@ -277,12 +266,10 @@ body {
     flex-direction: column; 
 
     margin-top: 25px;
-
 }
 
-/* Third Section */
+/***** Third Section *****/
 #thirdsection {
-
     height: auto;
     width: 720px;
 
@@ -292,55 +279,11 @@ body {
     flex-direction: column; 
 
     margin-top: 25px;
-
 }
 
-/* Fourth Section */
-#fourthsection {
-
-    height: auto;
-    width: 720px;
-
-    display: flex;
-    align-items: space-evenly;
-    justify-content: flex-start;
-    flex-direction: column; 
-
-    margin-top: 25px;
-
-}
-
-/* Fifth Section */
-#fifthsection {
-
-    height: auto;
-    width: 720px;
-
-    display: flex;
-    align-items: space-evenly;
-    justify-content: flex-start;
-    flex-direction: column; 
-
-    margin-top: 25px;
-
-}
-
-/* Sixth Section */
-#sixthsection {
-
-    height: auto;
-    width: 720px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-
-    margin-top: 10px;
-
-}
-
+/**************************************************/
+/***** Panel 1 Container *****/
 .panel1container {
-
     height: auto;
     width: 720px;
 
@@ -350,39 +293,260 @@ body {
 
     padding-top: 10px;
     padding-bottom: 10px;
-
 }
+
+/***** Panel 1 *****/
+.panel1 {
+    height: auto;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    padding: 10px;
+
+    background: #FEDE5A;
+    border-radius: 10px;
+}
+
+/***** HTML Skill Panel *****/
+.htmlskillpanel {
+    height: auto;
+    width: auto;
+
+    background-color: #FEDE5A;
+
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/***** HTML Skill Panel Heading *****/
+.htmlskillpanelheading {
+    height: auto;
+    width: auto;
+
+    background-color: #FEDE5A;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-direction: row; 
+}
+
+/* HTML */
+#html {
+    color: white;    
+    background-color: black;
+
+    border-radius: 5px;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+    margin-left: 5px;
+}
+
+/* HTML Percentage */
+#htmlpercentage {
+    color: white;    
+    background-color: black;
+
+    border-radius: 5px;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+    margin-left: 5px;
+}
+
+/***** HTML Skill Bar *****/
+.htmlskillbar {
+    height: auto;
+    width: auto;
+
+    background-color: #FEDE5A;
+
+    display: grid;
+    grid-template-columns: repeat(10, 10px);
+    grid-gap: 10px;
+
+    padding: 10px;
+}
+
+/* Darker Box 1 */
+#darkerbox1 {
+    height: 10px;
+    width: 10px;
+
+    background-color: black;
+}
+
+/* Box 1 */
+.box1 {
+    height: 10px;
+    width: 10px;
+
+    background-color: #a99a22;
+}
+
+/***** CSS Skill Panel *****/
+.cssskillpanel {
+    height: auto;
+    width: auto;
+
+    background-color: #FEDE5A;
+
+    margin-left: 10px;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/***** CSS Skill Panel Heading *****/
+.cssskillpanelheading {
+    height: auto;
+    width: auto;
+
+    background-color: #FEDE5A;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-direction: row; 
+}
+
+/* CSS */
+#css {
+    color: white;    
+    background-color: black;
+
+    border-radius: 5px;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+    margin-left: 5px;
+}
+
+/* CSS Percentage */
+#csspercentage {
+    color: white;    
+    background-color: black;
+
+    border-radius: 5px;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+    margin-left: 5px;
+}
+
+/***** CSS Skill Bar *****/
+.cssskillbar {
+    height: auto;
+    width: auto;
+
+    background-color: #FEDE5A;
+
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-gap: 10px;
+    
+    padding: 10px;
+}
+
+/* Darker Box 2 */
+#darkerbox2 {
+    height: 10px;
+    width: 40px;
+
+    background-color: black;
+}
+
+/* Box 2 */
+.box2 {
+    height: 10px;
+    width: 40px;
+
+    background-color: #a99a22;
+}
+/**************************************************/
+
+/* Fourth Section */
+#fourthsection {
+    height: auto;
+    width: 720px;
+
+    display: flex;
+    align-items: space-evenly;
+    justify-content: flex-start;
+    flex-direction: column; 
+
+    margin-top: 25px;
+}
+
+/* Fifth Section */
+#fifthsection {
+    height: auto;
+    width: 720px;
+
+    display: flex;
+    align-items: space-evenly;
+    justify-content: flex-start;
+    flex-direction: column; 
+
+    margin-top: 25px;
+}
+
+/* Sixth Section */
+#sixthsection {
+    height: auto;
+    width: 720px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    margin-top: 10px;
+}
+
 
 /* All the Headings in all the Sections in the Right Side Column */
 /* Every Heading */
 .everyheading {
-
     padding-left: 10px;
-
 }
 
 .lastheading {
-
     background-color: #FEDE5A;
     color: black;
-
 }
 
 /* All the Paras in all the Sections in the Right Side Column */
 /* Every Para */
 .everypara {
-
     padding-left: 10px;
-
     font-size: 18px; 
-
     margin-top: 10px;
-
 }
 
 /* Panel at the bottom */
 .panel3 {
-
     height: auto;
     width: 500px;
 
@@ -395,7 +559,6 @@ body {
 
     background-color: #FEDE5A;
     border-radius: 10px;
-
 }
 
 /* All the Logos with the Links in the Panel */
@@ -403,17 +566,14 @@ body {
 
 /* YT's and Linkedin's Logos */
 #logoyoutube {
-
     height: 40px;
     width: 40px;
 
     border: 0px solid black;
     background-color: #FEDE5A;
-
 }
 
 .logo {
-
     height: 40px;
     width: 40px;
 
@@ -423,11 +583,9 @@ body {
     border-radius: 4px;
 
     cursor: url('assets/cursors/clickcursor.png'), auto;
-
 }
 
 #logolinkedin {
-
     height: 40px;
     width: 40px;
 
@@ -435,11 +593,9 @@ body {
 
     border: 1px solid black;
     border-radius: 6px;
-
 }
 
 .links {
-
     height: 40px;
     width: 40px;
 
@@ -450,232 +606,10 @@ body {
     background-color: #FEDE5A;
 
     cursor: none;
-
 }
 
-/* Panel in Third Section */
-.panel1 {
-
-    height: auto;
-    width: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
-    padding: 10px;
-
-    background: #FEDE5A;
-    border-radius: 10px;
-
-}
-
-.htmlskillpanel {
-
-    height: auto;
-    width: auto;
-
-    background-color: #FEDE5A;
-
-    padding: 10px;
-
-    border: 1px solid black;
-
-    border-radius: 10px;
-
-}
-
-.htmlskillpanelheading {
-
-    height: auto;
-    width: auto;
-
-    background-color: #FEDE5A;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    flex-direction: row; 
-
-}
-
-.htmlskillbar {
-
-    height: auto;
-    width: auto;
-
-    background-color: #FEDE5A;
-
-    display: grid;
-    grid-template-columns: repeat(10, 10px);
-    grid-gap: 10px;
-
-    padding: 10px;
-
-}
-
-.box {
-
-    height: 10px;
-    width: 20px;
-
-    background-color: #a38216;
-
-}
-
-#html {
-
-    color: white;    
-    background-color: black;
-
-    border-radius: 5px;
-
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-
-    margin-left: 5px;
-
-}
-
-#htmlpercentage {
-
-    color: white;    
-    background-color: black;
-
-    border-radius: 5px;
-
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-
-    margin-left: 5px;
-
-}
-
-/* Panel in Third Section */
-
-.cssskillpanel {
-
-    height: auto;
-    width: auto;
-
-    background-color: #FEDE5A;
-
-    margin-left: 10px;
-
-    padding: 10px;
-
-    border: 1px solid black;
-
-    border-radius: 10px;
-
-}
-
-.cssskillpanelheading {
-
-    height: auto;
-    width: auto;
-
-    background-color: #FEDE5A;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    flex-direction: row; 
-
-}
-
-.cssskillbar {
-
-    height: auto;
-    width: auto;
-
-    background-color: #FEDE5A;
-
-    display: grid;
-    grid-template-columns: repeat(4, 40px);
-    grid-gap: 10px;
-    
-    padding: 10px;
-
-}
-
-.box {
-
-    height: 10px;
-    width: 10px;
-
-    background-color: #a99a22;
-
-}
-
-.box2 {
-
-    height: 10px;
-    width: 40px;
-
-    background-color: #a99a22;
-
-}
-
-#darkerbox1 {
-
-    height: 10px;
-    width: 10px;
-
-    background-color: black;
-
-}
-
-#darkerbox2 {
-
-    height: 10px;
-    width: 40px;
-
-    background-color: black;
-
-}
-
-#css {
-
-    color: white;    
-    background-color: black;
-
-    border-radius: 5px;
-
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-
-    margin-left: 5px;
-
-}
-
-#csspercentage {
-
-    color: white;    
-    background-color: black;
-
-    border-radius: 5px;
-
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-
-    margin-left: 5px;
-
-}
 
 .panel2container {
-
     height: auto;
     width: 720px;
 
@@ -685,11 +619,9 @@ body {
 
     padding-top: 10px;
     padding-bottom: 10px;
-
 }
 
 .panel2 {
-
     height: auto;
     width: auto;
 
@@ -701,11 +633,9 @@ body {
 
     background: #FEDE5A;
     border-radius: 10px;
-
 }
 
 .project {
-
     height: 75px;
 
     background-color: #FEDE5A;
@@ -719,33 +649,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; 
-
 }
 
 .projectlogos {
-
     height: 40px;
     width: 40px;
 
     background-color: #FEDE5A;
 
     cursor: url('assets/cursors/clickcursor.png'), auto;
-
 }
 
 .projectlinks {
-
     height: 40px;
     width: 40px;
-
-    cursor: none;
 
     margin-left: 10px;
 
     background-color: #FEDE5A;
 
     cursor: none;
-
 }
 
 
